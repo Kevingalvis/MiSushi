@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Logos/sushi.png" />
+    <link rel="stylesheet" href="Css/main.css">
+    <title>MiSushi</title>
+</head>
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <div class="cont-nav">
+        <div class="cont-logo">
+            <img src="Assets/Logos/logoSubMenu.svg" alt="logo">
+        </div>
+        <nav class="cont-nav">
+            <span class="contador" id="contador">0</span>
+            <a href="#" id="btn-carrito"><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-circle-chevron-down"></i></a>
+            <div class="carrito carrito-visible" id="carrito">
+                <table class="list-carrito" id="list-carrito">
+                    <thead>
+                        <tr class="list-tr">
+                            <th>Sushi</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody"></tbody>
+                </table>
+                <div class="cont-btn-carrito">
+                    <button class="btn-comprar" id="pedir"> Solicitar </button>
+                    <button class="btn-comprar" id="limpiar-carrito"> Limpiar Carrito </button>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+  <!-- SLIDER -->
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <div class="logo">
+                    <img src="Assets/Imgs/logo.svg" alt="logo">
+                </div>
+                <img src="Assets/Imgs/fondoSushi.jpg" alt="fondo" class="slider__img img_desktop" alt="Imagen">
+            </div>
+            <!-- PRODUCTO 1 -->
+            <div class="slider__section" id="slider">
+                <div class="cont-resumen">
+                    <div class="informacion">
+                        <h2>Sushi Numero 1</h2><br>
+                        <p>Arroz,Aguacate,Salmon</p>
+                        <p>9 Piezas</p><br>
+                        <h3 class="precio">Precio:<Span>45.000</Span>Col</h3>
+                    </div>
+                    <div class="cont-agregar">
+                        <button class="agregar-carrito" data-id="1">Agregar al carrito</button>
+                    </div>
+                </div>
+                <img src="Assets/Imgs/sushiProductoUno.jpg" alt="" class="slider__img">
+            </div>
+            <!-- PRODUCTO 2 -->
+            <div class="slider__section" id="slider">
+                <div class="cont-resumen">
+                    <div class="informacion">
+                        <h2>Sushi Numero 2</h2><br>
+                        <p>Arroz,Aguacate,Salmon</p>
+                        <p>9 Piezas</p><br>
+                        <h3 class="precio">Precio:<Span>35.000</Span>Col</h3>
+                    </div>
+                    <div class="cont-agregar">
+                        <button class="agregar-carrito" data-id="2">Agregar al carrito</button>
+                    </div>
+                </div>
+                <img src="Assets/Imgs/sushiProductoDos.jpg" alt="" class="slider__img">
+            </div>
+
+            <div class="slider__section" id="slider">
+                <div class="cont-resumen">
+                    <div class="informacion">
+                        <h2>Sushi Numero 3</h2><br>
+                        <p>Rollo de salmón con arroz, sésamo, jengibre y wasabi</p>
+                        <p>9 Piezas</p><br>
+                        <h3 class="precio">Precio:<Span>15.000</Span>Col</h3>
+                    </div>
+                    <div class="cont-agregar">
+                        <button class="agregar-carrito" data-id="3">Agregar al carrito</button>
+                    </div>
+                </div>
+                <img src="Assets/Imgs/sushiProductoTres.jpg" alt="" class="slider__img">
+            </div>
+            
+        </div>
+        <!-- BOTONES SLIDER -->
+        <div class="slider__btn slider__btn--right" id="btn-right"><i class="fa-regular fa-hand"></i></div>
+        <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa-regular fa-hand"></i></div>
+        <!--MODAL -->
+        <section class="sect-modal sect-modal_active" id="sect-modal">
+            <div class="modal">
+                <p>Se agrego a tu carrito</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://kit.fontawesome.com/1b166ddc73.js" crossorigin="anonymous"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
+

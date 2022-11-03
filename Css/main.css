@@ -1,0 +1,470 @@
+@font-face {
+    font-family:'HIROMISAKE';
+    src: url(../Assets/Fonts/HIROMISAKE.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont-nav{
+
+    width: 100%;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    background: rgb(32, 31, 31);
+    box-shadow: 0px 2px 0px 0px rgb(239, 239, 239);
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+   
+}
+.cont-logo{
+    width: 50%;
+     
+    
+}
+.cont-logo img{
+    height: 6.25rem;
+    margin-left: 2.5rem;
+    background-size: cover;
+}
+.cont-nav{
+    display: flex;
+    justify-content: end;
+      
+}
+.cont-nav i{
+    color: rgb(255,255,255);
+    font-size: 1.5rem;
+    margin-right: 1rem  ;
+}
+
+.contador{
+    color: #fff;
+    font-family: 'HIROMISAKE';
+    font-size: 1.5rem;
+    
+}
+
+/** CONTENEDOR DE IMAGENES PARA EL CARROUSEL*/
+.container-slider{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 0rem;
+    
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    margin-left: -100%;
+    background-size: contain;
+    object-fit: fill;
+}
+.slider__section{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.slider img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 250px;
+}
+.cont-resumen{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(12, 12, 12, 0.748);
+    box-shadow: 0px 1px 15px 0px rgba(214,207,214,1);
+
+    position: absolute;
+    bottom: 50px;
+}
+.informacion{
+    width: 50%;
+    color: #fff;
+    font-family:'HIROMISAKE';
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    line-height: 1.5rem;
+}
+.informacion h2{
+    font-size: 3rem;
+    
+}
+.informacion ul{
+    padding: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    list-style: none;
+}
+
+.informacion span{
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.cont-agregar{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.cont-agregar button{
+    padding: 2rem;
+    width: 55%;
+    border-radius: 55px;
+    border: none;
+    background: rgb(32, 31, 31);
+    color: #fff;
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 0px rgb(117, 3, 3);
+    cursor: pointer;
+}
+.cont-agregar button:hover{
+    background: rgb(175, 2, 2);
+}
+.slider__btn{
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height:100px;
+    background: rgb(134, 0, 0);
+    box-shadow: -1px 10px 43px 18px rgba(255, 255, 255, 0.75);
+
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;  
+}
+.slider__btn--right{
+    right: 10px;
+}
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right i{
+    color: #fff;
+    position: relative;
+    top: 20px;
+    font-size: 1.5rem;
+}
+.slider__btn--left i{
+    color: #fff;
+    position: relative;
+    top: 20px;
+    font-size: 1.5rem;
+}
+.slider__btn:hover{
+    background: rgb(175, 2, 2);
+}
+
+/*CARRITO*/
+
+.carrito{ 
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.617);
+    position: absolute;
+    top:6.25rem; ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px ;
+    box-shadow: 2px 13px 10px -1px rgba(0,0,0,0.75);
+}
+.carrito-visible{
+    display: none;
+}
+
+.list-carrito{
+    width: 100%;
+    height: 1.5rem;
+  
+}
+.list-carrito thead{
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    font-size: small;
+}
+tbody td{
+    text-align: center;
+    font-weight: 600;
+}
+
+.borrar-producto{
+    background-color: rgb(120, 32, 32);
+    border-radius: 100%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.btn-carrito{
+    border:none;
+    border-radius: 15px;
+    background: rgb(32, 31, 31);
+    color: #fff;
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: bold;
+    padding: 5px;
+    width: 50%;
+    position: absolute;
+    bottom: 15px;
+    right:10px;
+
+}
+.cont-btn-carrito{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-comprar{
+    width: 50%;
+    background: none;
+    border: none;
+    background-color: rgb(32, 31, 31);
+    margin: 0.5rem;
+    padding: 0.9rem;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 2px 26px 0px rgb(32, 32, 32);
+    cursor: pointer;
+    font-family:'Karasha';
+    font-size: 16px;
+
+
+}
+.btn-comprar:hover{
+    background: rgb(175, 2, 2);
+}
+
+/*VENTANA MODAL AGREGADO CARRITO*/
+.sect-modal{
+   
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.336);
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    
+}
+.sect-modal_active{
+    display: none;
+
+}
+
+.modal{
+    width: 20%;
+    height: 10%;
+    background: #fff;
+
+    margin: auto;
+    padding: auto;
+
+    position: relative;
+    top: 1rem;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 26px 0px rgb(133, 17, 2);
+
+}
+.modal p{
+    font-family:'HIROMISAKE';
+}
+
+/*MEDIA QUERY PARA CELULARES*/
+
+@media (min-width: 0) and (max-width: 768px) and (orientation: landscape){
+   .cont-nav{
+        height: 3.25rem;
+    }
+    .cont-logo img{
+        height: 3.25rem;
+      
+    }
+    .cont-nav i{
+        font-size: 1.0rem;
+    }
+    .container-slider{
+        height: 100vh;
+    }
+    .logo img{
+        height: 100px;
+    }
+
+    .cont-resumen{
+        width: 100%;
+        height: auto;
+       
+    }
+    .informacion{
+        
+        letter-spacing: 0em;
+        line-height: 1rem;
+    }
+    .informacion h2{
+        padding-top: 1rem;
+        font-size: 1.0rem;   
+    }
+    .informacion ul li{
+        font-size: 0.8rem;
+    }
+    .informacion span{
+        font-size: 1.5rem;
+        
+    }
+    .precio{
+        font-size: 0.5rem;
+    }
+    .cont-agregar button{
+        width: 70%;
+        padding: 1rem;
+        font-size: 1.0rem;
+
+    }
+
+    .carrito{ 
+        width: 100%;
+        top:3.40rem; ;
+    }
+    
+    tbody td img{
+       width: 50px;
+    }
+    tbody td{
+       font-size: small;
+    }
+    .btn-comprar{
+        width: 150px;
+        font-size: 12px;
+    }
+
+
+}
+@media (min-width: 0) and (max-width: 768px) and (orientation: portrait) {
+    .cont-nav{
+        height: 3.25rem;
+    }
+    .cont-logo img{
+        height: 3.25rem;
+      
+    }
+    .cont-nav i{
+        font-size: 1.0rem;
+    }
+    .container-slider{
+        height: 100vh;
+        object-fit: fill;
+       
+    }
+    .logo img{
+        height: 100px;
+    }
+    .slider__section{
+        height: 100vh;
+    }
+
+  
+    .informacion{
+        width: 100%;
+        letter-spacing: 0em;
+        line-height: 1rem;
+    }
+    .informacion p{
+        font-size: 0.6rem;
+        letter-spacing: 5px;
+        
+    }
+    .informacion h2{
+        padding-top: 1rem;
+        font-size: 1.0rem;   
+    }
+    .informacion ul li{
+        font-size: 0.6rem;
+    }
+    .informacion span{
+        font-size: 1.5rem;
+        
+    }
+    .precio{
+        font-size: 0.5rem;
+        letter-spacing: 5px;
+    }
+    .cont-resumen{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .cont-agregar{
+        width: 100%;
+       
+    }
+    .cont-agregar button{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .carrito{ 
+        width: 150%;
+        top:3.40rem; ;
+    }
+    
+    tbody td img{
+       width: 50px;
+    }
+    tbody td{
+       font-size: small;
+    }
+    .btn-comprar{
+        width: 150px;
+        font-size: 12px;
+    }
+    .modal{
+        width: 50%;
+    }
+
+    .modal p{
+        text-align: center;
+    }
+    
+}
